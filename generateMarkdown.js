@@ -1,102 +1,135 @@
-const licensePicked = require("./index.js")
-let license = licensePicked;
+
 let link;
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
-// function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-
-
-// function renderLicenseBadgeAndLink(license) {}
+function renderLicenseBadgeAndLink(license) {
     
-switch(license) {
-    case "MIT":
-        link = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-        break;
-    case "GPLv2":
-        link = "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
-        break;
-    case "Apache":
-        link = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-        break;
-    case "LGPLv3":
-        link = "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)";
-        break;
-    case "none":
-        link = "";
-        break;
-    default:
-        console.log("please check your inputs");   
-}    
-  
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+    switch(license) {
+        case "MIT":
+            link = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+            break;
+        case "GPLv2":
+            link = "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
+            break;
+        case "Apache":
+            link = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+            break;
+        case "LGPLv3":
+            link = "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)";
+            break;
+        case "none":
+            link = "";
+            break;
+        default:
+            console.log("please check your inputs");   
+    }
 
-// function renderLicenseSection(license) {}
+return link;
+}
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  
-  data.licenseBadge = link;
-  
-  return `# ${data.project-title}
+    
+  return `## &emsp; **${data.projectTitle}**
 
-  ${data.licenseBadge}
+  ![alt text](assets/images/fire.png)
+  <br>
   
-  ## Description
+  &emsp;&ensp; ${renderLicenseBadgeAndLink(data.license)}
+  <br>
+  <br>
+  <br>
+    
+  ### &emsp; DESCRIPTION
   ***
+  
   ${data.description}
+  <br>
+  <br>
+  <br>
 
-  ## Table of Contents 
+  ### &emsp; TABLE OF CONTENTS
   ***
-  * [Description](#description)
-  * [Installation Instructions](#installation instructions)
-  * [Usage Info](#usage info)
-  * [Contribution Guidelines](#contribution guidelines)
-  * [Test Instructions](#test instructions)
+
+  * [Installation Instructions](#installation-instructions)
+  * [Usage Info](#usage-info)
+  * [Contribution Guidelines](#contribution-guidelines)
+  * [Test Instructions](#test-instructions)
   * [License](#license)
+  * [Credits](#credits)
   * [Questions](#questions)
+  <br>
+  <br>
+  <br>
 
-  ## Installation Instructions
+  ### &emsp; INSTALLATION INSTRUCTIONS
   ***
-  To install dependencies for this application, you can run the following:
+  
+  To install dependencies for this application you can run the following:
   \`
-  ${data.installationInstructions}
+  ${data.installationInstructions}.
   \`
+  <br>
+  <br>
+  <br>
 
-  ## Usage Info
+  ### &emsp; USAGE INFO
   ***
+
   ${data.usageInfo}
+  <br>
+  <br>
+  <br>
 
-  ## Contribution Guidelines
+  ### &emsp; CONTRIBUTION GUIDELINES
   ***
+  
   ${data.contributionGuidelines}
+  <br>
+  <br>
+  <br>
 
-  ## Test Instructions
+  ### &emsp; TEST INSTRUCTIONS
   ***
-  To run tests for this application, you can run the following:
+
+  To run tests for this application you can run the following:
   \`
-  ${data.testInstructions}
+  ${data.testInstructions}.
   \`
+  <br>
+  <br>
+  <br>
 
-  ## License
+  ### &emsp; LICENSE
   ***
-  This repository is licensed under the ${data.license} license.
 
-  ## Credits
-  ***
+  This repository is licensed under the **${data.license}** license.
+  
+  ${renderLicenseBadgeAndLink(data.license)}
+  <br>
+  <br>
+  <br>
+
+  ### &emsp; CREDITS
+  ***  
+
   ${data.credits}
+  <br>
+  <br>
+  <br>
 
-  ## Questions
+  ### &emsp; QUESTIONS
   ***
+
   Should you have any questions about my repository you can contact me at:
   * [https://github.com/${data.githubUsername}/](https://github.com/${data.githubUsername}/)
-  * [mailto](${data.email})
+  * [${data.email}](mailto:${data.email})
+  <br>
+  <br>
+  <br>
+
+  ![alt text](assets/images/gb-b.jpg)&emsp;by ghibli
+  ![alt text](assets/images/water.png)
+  
 `;
 }
 
-module.exports = generateMarkdown();
+module.exports = generateMarkdown;

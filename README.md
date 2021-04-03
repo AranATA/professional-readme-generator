@@ -92,5 +92,3 @@ ghibli.github@gmail.com
 ![GitHub language count](https://img.shields.io/github/languages/count/AranATA/accessible-horiseon)
 <br>
 <br>
-
----

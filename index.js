@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require("./generateMarkdown.js")();
+const generateMarkdown = require("./generateMarkdown.js");
 // TODO: Create an array of questions for user input
 
 const questions = [
@@ -64,25 +64,27 @@ const questions = [
 // function writeToFile(fileName, data) {}
 
 function writeToFile (fileName, answers) {
-
-inquirer
-    .prompt(questions)
-    .then((answers) => {
-        const pageContentReady = generateMarkdown(answers);
-               
-        fs.writeFile(fileName, pageContentReady, (err) =>
-            err ? console.log(err) : console.log("Successfully created your file!")
-        );
-    });  
+    fs.writeFile(fileName, answers, (err) =>
+    err ? console.log(err) : console.log("Successfully created your file!")
+);
 }
 
-exports.license = `${answers.license}`;
+// exports.license = `${answers.license}`;
 
 // TODO: Create a function to initialize app
 function init() {
-    console.log("Welcome to your professional README generator.\nPlease answer the following questions:")
-    writeToFile("README.md", answers);
+    inquirer
+    .prompt(questions)
+    .then((answers) => {
+        const pageContentReady = generateMarkdown(answers);
+    writeToFile("./generatedREADME/README.md", pageContentReady)        
+    }); 
+
 }
 
 // Function call to initialize app
 init();
+
+
+// what kind of syntax is this:
+// data.licenseBadge = licenseBadgeLinks[data.license];
