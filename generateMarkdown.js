@@ -28,9 +28,11 @@ return link;
 
 function generateMarkdown(data) {
     
-  return `## &emsp; **${data.projectTitle}**
+  return `<br>
+  
+  ## &emsp; **${data.projectTitle}**
 
-  ![alt text](assets/images/fire.png)
+  ![alt text](assets/images/red.png)
   <br>
   
   &emsp;&ensp; ${renderLicenseBadgeAndLink(data.license)}
@@ -38,17 +40,10 @@ function generateMarkdown(data) {
   <br>
   <br>
     
-  ### &emsp; DESCRIPTION
-  ***
-  
-  ${data.description}
-  <br>
-  <br>
-  <br>
-
   ### &emsp; TABLE OF CONTENTS
-  ***
+  <br>
 
+  * [Description](#description)
   * [Installation Instructions](#installation-instructions)
   * [Usage Info](#usage-info)
   * [Contribution Guidelines](#contribution-guidelines)
@@ -59,49 +54,49 @@ function generateMarkdown(data) {
   <br>
   <br>
   <br>
+  
+  ### &emsp; DESCRIPTION
+    
+  ${data.description}
+  <br>
+  <br>
+  <br>
 
   ### &emsp; INSTALLATION INSTRUCTIONS
-  ***
   
   To install dependencies for this application you can run the following:
-  \`
-  ${data.installationInstructions}.
-  \`
+  
+   \`${data.installationInstructions}\`
   <br>
   <br>
   <br>
 
   ### &emsp; USAGE INFO
-  ***
-
+  
   ${data.usageInfo}
   <br>
   <br>
   <br>
 
   ### &emsp; CONTRIBUTION GUIDELINES
-  ***
-  
+    
   ${data.contributionGuidelines}
   <br>
   <br>
   <br>
 
   ### &emsp; TEST INSTRUCTIONS
-  ***
-
+  
   To run tests for this application you can run the following:
-  \`
-  ${data.testInstructions}.
-  \`
+
+  \`${data.testInstructions}\`
   <br>
   <br>
   <br>
 
   ### &emsp; LICENSE
-  ***
-
-  This repository is licensed under the **${data.license}** license.
+ 
+  This repository is licensed under the \`${data.license}\` license. Click the badge for details. 
   
   ${renderLicenseBadgeAndLink(data.license)}
   <br>
@@ -109,7 +104,8 @@ function generateMarkdown(data) {
   <br>
 
   ### &emsp; CREDITS
-  ***  
+  
+  This project was made possible with the support and collaboration of:
 
   ${data.credits}
   <br>
@@ -117,18 +113,19 @@ function generateMarkdown(data) {
   <br>
 
   ### &emsp; QUESTIONS
-  ***
 
-  Should you have any questions about my repository you can contact me at:
+  Should you have any questions about my repository you can contact us at:
   * [https://github.com/${data.githubUsername}/](https://github.com/${data.githubUsername}/)
   * [${data.email}](mailto:${data.email})
   <br>
   <br>
   <br>
 
-  ![alt text](assets/images/gb-b.jpg)&emsp;by ghibli
-  ![alt text](assets/images/water.png)
-  
+  ![alt text](assets/images/blue.png)
+  <br>
+
+  &emsp;&ensp;![alt text](assets/images/gb-b.jpg)&emsp;by ghibli
+    
 `;
 }
 

@@ -36,6 +36,8 @@ The codebase achieves the following criteria:<br>
 A short video that shows how the UI works.<br>
 <br>
 
+
+
 ![professional README generator demo](assets/images/professional-readme-generator.gif)
 
 <br>

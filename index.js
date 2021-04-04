@@ -24,12 +24,12 @@ const questions = [
     {
         type: "input",
         name: "usageInfo",
-        message: "How can someone make use of your application?",
+        message: "How do users run your application?",
     },
     {
         type: "input",
         name: "contributionGuidelines",
-        message: "What does a user need to know about contributing to your repo?",
+        message: "What do developers need to know about contributing to your repo?",
     },
     {
         type: "input",
@@ -65,7 +65,7 @@ const questions = [
 
 function writeToFile (fileName, answers) {
     fs.writeFile(fileName, answers, (err) =>
-    err ? console.log(err) : console.log("Successfully created your file!")
+    err ? console.log(err) : console.log("Successfully created your file in the generatedREADME folder!")
 );
 }
 
@@ -73,6 +73,7 @@ function writeToFile (fileName, answers) {
 
 // TODO: Create a function to initialize app
 function init() {
+    console.log("Please answer the following questions:")
     inquirer
     .prompt(questions)
     .then((answers) => {

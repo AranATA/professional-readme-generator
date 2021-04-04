@@ -1,28 +1,19 @@
-## &emsp; **ANTARCTICA**
+<br>
+  
+  ## &emsp; **alabandafal**
 
-  ![alt text](assets/images/fire.png)
+  ![alt text](assets/images/red.png)
   <br>
   
-  &emsp;&ensp; [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  &emsp;&ensp; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   <br>
   <br>
   <br>
     
-  ### &emsp; DESCRIPTION
-  ***
-  
-  This project has a long history of research and study at the sonic lab located in Antarctica. Lots of data collected by listening depths of ice.
-
-All the results are gathered under one roof and this application provides east access to the compilation.
-
-thank you
-  <br>
-  <br>
-  <br>
-
   ### &emsp; TABLE OF CONTENTS
-  ***
+  <br>
 
+  * [Description](#description)
   * [Installation Instructions](#installation-instructions)
   * [Usage Info](#usage-info)
   * [Contribution Guidelines](#contribution-guidelines)
@@ -33,73 +24,75 @@ thank you
   <br>
   <br>
   <br>
+  
+  ### &emsp; DESCRIPTION
+    
+  <br>e3 4r 14tr 14` tr`1t4`
+  <br>
+  <br>
+  <br>
 
   ### &emsp; INSTALLATION INSTRUCTIONS
-  ***
   
   To install dependencies for this application you can run the following:
-  `
-  npm i.
-  `
+  
+   `npm i`
   <br>
   <br>
   <br>
 
   ### &emsp; USAGE INFO
-  ***
-
-  jhuiry whefouicnhqp npwu4ync9pqc hwjehf hwjeh hpuoiwryhpe4i kjporef.
+  
+  
   <br>
   <br>
   <br>
 
   ### &emsp; CONTRIBUTION GUIDELINES
-  ***
+    
   
-  moi3rucn 2roi3rcn wjh hj2o3ihpoi2 hh;q h;q2i4 h iqh43.
   <br>
   <br>
   <br>
 
   ### &emsp; TEST INSTRUCTIONS
-  ***
-
+  
   To run tests for this application you can run the following:
-  `
-  npm run test.
-  `
+
+  `npm run test`
   <br>
   <br>
   <br>
 
   ### &emsp; LICENSE
-  ***
-
-  This repository is licensed under the **Apache** license.
+ 
+  This repository is licensed under the `MIT` license. Click the badge for details. 
   
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   <br>
   <br>
   <br>
 
   ### &emsp; CREDITS
-  ***  
+  
+  This project was made possible with the support and collaboration of:
 
-  Patrick, Alexis, Stephen, Tim, Sean.
+  
   <br>
   <br>
   <br>
 
   ### &emsp; QUESTIONS
-  ***
 
-  Should you have any questions about my repository you can contact me at:
-  * [https://github.com/jpokjoin/](https://github.com/jpokjoin/)
-  * [kjnh;iohn](mailto:kjnh;iohn)
+  Should you have any questions about my repository you can contact us at:
+  * [https://github.com//](https://github.com//)
+  * [](mailto:)
   <br>
   <br>
   <br>
 
-  ![alt text](assets/images/gb-b.jpg)&emsp;by ghibli
-  ![alt text](assets/images/water.png)
-  
+  ![alt text](assets/images/blue.png)
+  <br>
+
+  &emsp;&ensp;![alt text](assets/images/gb-b.jpg)&emsp;by ghibli
+    
