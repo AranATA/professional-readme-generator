@@ -22,7 +22,7 @@ const questions = [
         default: "npm i"
     },
     {
-        type: "input",
+        type: "editor",
         name: "usageInfo",
         message: "How do users run your application?",
     },

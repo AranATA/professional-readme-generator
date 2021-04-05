@@ -40,7 +40,7 @@ function generateMarkdown(data) {
   <br>
   <br>
     
-  ### &emsp; TABLE OF CONTENTS
+  ### &emsp; **TABLE OF CONTENTS**
   <br>
 
   * [Description](#description)
@@ -55,14 +55,14 @@ function generateMarkdown(data) {
   <br>
   <br>
   
-  ### &emsp; DESCRIPTION
+  ### &emsp; **DESCRIPTION**
     
   ${data.description}
   <br>
   <br>
   <br>
 
-  ### &emsp; INSTALLATION INSTRUCTIONS
+  ### &emsp; **INSTALLATION INSTRUCTIONS**
   
   To install dependencies for this application you can run the following:
   
@@ -71,21 +71,21 @@ function generateMarkdown(data) {
   <br>
   <br>
 
-  ### &emsp; USAGE INFO
+  ### &emsp; **USAGE INFO**
   
   ${data.usageInfo}
   <br>
   <br>
   <br>
 
-  ### &emsp; CONTRIBUTION GUIDELINES
+  ### &emsp; **CONTRIBUTION GUIDELINES**
     
   ${data.contributionGuidelines}
   <br>
   <br>
   <br>
 
-  ### &emsp; TEST INSTRUCTIONS
+  ### &emsp; **TEST INSTRUCTIONS**
   
   To run tests for this application you can run the following:
 
@@ -94,7 +94,7 @@ function generateMarkdown(data) {
   <br>
   <br>
 
-  ### &emsp; LICENSE
+  ### &emsp; **LICENSE**
  
   This repository is licensed under the \`${data.license}\` license. Click the badge for details. 
   
@@ -103,7 +103,7 @@ function generateMarkdown(data) {
   <br>
   <br>
 
-  ### &emsp; CREDITS
+  ### &emsp; **CREDITS**
   
   This project was made possible with the support and collaboration of:
 
@@ -112,9 +112,9 @@ function generateMarkdown(data) {
   <br>
   <br>
 
-  ### &emsp; QUESTIONS
+  ### &emsp; **QUESTIONS**
 
-  Should you have any questions about my repository you can contact us at:
+  Should you have any questions or feedback about our repository please contact us at:
   * [https://github.com/${data.githubUsername}/](https://github.com/${data.githubUsername}/)
   * [${data.email}](mailto:${data.email})
   <br>

@@ -7,7 +7,7 @@
 ## description
 
 ***
-This is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. The application will be invoked by using the following command: node index.js
+This is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. The application will be invoked by using the following command: `node index.js`. After receiving the answers the application creates a README.md file in the generatedREADME folder. Each subsequent generation will overwrite the existing README file.  
 
 <br>
 <br>
@@ -33,12 +33,26 @@ The codebase achieves the following criteria:<br>
 
 ***
 
-A short video that shows how the UI works.<br>
+Under the link below you will find a walkthrough video that demonstrates; how a user would invoke the application from the command line, how a user would enter responses to all of the prompts in the application and a generated README.md that matches the user input and has a functioning table of contents.<br>
+If the video appears out of focus please hit the space bar twice.
+
+[https://drive.google.com/file/d/1tsZAYGVHpuPjQm7ea4EmjiG5606DC-g-/view](https://drive.google.com/file/d/1tsZAYGVHpuPjQm7ea4EmjiG5606DC-g-/view)
+
+<br>
 <br>
 
+A screenshot that shows the terminal with all the prompts:<br>
+<br>
 
+![alt text](generatedREADME/assets/images/scrshot-terminal.png)
 
-![professional README generator demo](assets/images/professional-readme-generator.gif)
+<br>
+<br>
+
+A screenshot that shows the full generated README file:<br>
+<br>
+
+![alt text](generatedREADME/assets/images/scrshot-generatedREADME.png)
 
 <br>
 <br>
